@@ -16,10 +16,10 @@ testset = torch.utils.data.DataLoader(test, batch_size=10, shuffle=False)
 
 # creating our forward N.N. :
 
-# 1o def -> creating my 4 fully connected layers(fc1=input,fc2+fc3=hidden,fc4=output layer)
-# Applies a linear transformation to the incoming data: y = x*W^T + b , with W(weights) randomly initialized
+# 1o def -> creating my 4 fully connected  layers(fc1=input,fc2+fc3=hidden,fc4=output layer)
+# Applies a linear transformation to the  incoming data: y = x*W^T + b , with W(weights) randomly initialized
 
-# 2o def(forward) -> pernaei ta fc1,fc2,fc3 apo activation function(ReLU), profanos oxi to output layer
+# 2o def(forward) -> pernaei ta fc1,fc2,fc3  apo activation function(ReLU), profanos oxi to output layer
 # dioti to fc4 tha perasei apo thn softmax
 class Net(nn.Module):
     def __init__(self):
