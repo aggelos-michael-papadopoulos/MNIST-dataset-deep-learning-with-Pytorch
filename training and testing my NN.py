@@ -59,7 +59,7 @@ with torch.no_grad():                       # deactivates autograd engine
         output = net(X.view(-1, 784))       # flattening.. einai 1000 1x10  tesnors afoy exoyme 10 sto softmax(10000 test data)
         # print(output)
         for idx, i in enumerate(output):
-            # print(torch.argmax(i), y[idx])  # print arxika thn problepsi(NN gia to test label, kai meta deixnei raw?test label
+            # print(torch.argmax(i), y[idx])  # print arxika thn  problepsi(NN gia to test label, kai meta deixnei raw?test label
             if torch.argmax(i) == y[idx]:
                 correct += 1
             total += 1
@@ -68,7 +68,7 @@ with torch.no_grad():                       # deactivates autograd engine
 print('Accuracy: ', round(correct/total, 3)*100, '%')
 
 # vizualize
-print('the test set is: ')
+print('the test set is:  ')
 plt.imshow(X.view(280, 28))                         # the 10 label testset kai emeis kanoume check to 6o me to NN
 plt.show()
 print('the testing image is: ')
